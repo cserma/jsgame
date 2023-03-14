@@ -1,0 +1,98 @@
+<head>
+    <style>
+        @font-face {
+            font-family: "atari-custom";
+            src: url(./assets/atari.ttf) format("truetype");
+        }
+        * {
+            box-sizing: border-box;
+            font-family: 'atari-custom';
+        }
+    </style>
+</head>
+<body>
+    <div style="position: relative; display: inline-block;">
+        <div style="
+            display:flex;
+            position: absolute;
+            width: 100%;
+            align-items: center;
+            padding: 20px;
+            ">
+
+            <div style="
+            position: relative;
+            height: 30px;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;">
+                <div style="
+                background-color: gray;
+                height: 30px;
+                width: 100%;
+                outline: 1px solid darkgrey
+                "></div>
+                <div id="playerHealth" style="
+                    position: absolute;
+                    background: yellow;
+                    top:0;
+                    bottom:0;
+                    right:0;
+                    width: 100%;
+                "></div>
+            </div>
+
+            <div id="timer" style="
+            background-color: black;
+            height: 60px;
+            width: 100px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 30px;
+            ">
+                10
+            </div>
+
+            <div style="
+            position: relative;
+            height: 30px;
+            width: 100%;">
+                <div style="
+                background-color: gray;
+                height: 30px;
+                outline: 1px solid darkgrey
+                "></div>
+                <div id="enemyHealth" style="
+                    position: absolute;
+                    background: yellow;
+                    top:0;
+                    bottom:0;
+                    right:0;
+                    left:0
+                "></div>
+            </div>
+        </div>
+
+        <div id="resultText" style="
+        position: absolute;
+        color:white;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        bottom:0;
+        right: 0;
+        left: 0;
+        font-size: 50px;
+        ">Tie</div>
+
+
+        <canvas></canvas>
+    </div>
+    <script src="js/classes.js"></script>
+    <script src="index.js"></script>
+</body>
+
